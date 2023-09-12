@@ -4,12 +4,21 @@
 //
 //  Created by Andres E. Lopez on 9/8/23.
 //
-import SwiftUI
 import Foundation
+import SwiftUI
 struct Shapes: View {
     var body: some View {
         Circle()
-            .frame()
+            .frame(width: 100, height: 100)
+            .foregroundColor(.blue)
+        Rectangle()
+            .trim(from: 0.2, to: 1.0)
+            .foregroundColor(.green)
+            
+        
+       
         }
+        
     }
+    
 
